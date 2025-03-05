@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements Example</title>
+    <style>
+        /* Pseudo-element ::before */
+        .before-example::before {
+            content: "Before: ";
+            color: blue;
+        }
+
+        /* Pseudo-element ::after */
+        .after-example::after {
+            content: " :After";
+            color: red;
+        }
+
+        /* Pseudo-element ::first-letter */
+        .first-letter-example::first-letter {
+            font-size: 2em;
+            color: green;
+        }
+
+        /* Pseudo-element ::first-line */
+        .first-line-example::first-line {
+            font-weight: bold;
+            color: purple;
+        }
+
+        /* Pseudo-element ::selection */
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="before-example">This is an example of the ::before pseudo-element.</div>
+    <div class="after-example">This is an example of the ::after pseudo-element.</div>
+    <div class="first-letter-example">This is an example of the ::first-letter pseudo-element.</div>
+    <div class="first-line-example">This is an example of the ::first-line pseudo-element. The first line of this text will be styled differently from the rest.</div>
+    <p>Select some text to see the ::selection pseudo-element in action.</p>
+</body>
+</html>
